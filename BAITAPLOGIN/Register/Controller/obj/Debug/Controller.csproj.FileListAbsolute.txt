@@ -1,0 +1,7 @@
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Controller\bin\Debug\Controller.dll
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Controller\bin\Debug\Controller.pdb
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Controller\bin\Debug\Entity.dll
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Controller\bin\Debug\Entity.pdb
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Controller\obj\Debug\Controller.dll
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Controller\obj\Debug\Controller.pdb

@@ -1,0 +1,5 @@
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Entity\bin\Debug\Entity.dll
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Entity\bin\Debug\Entity.pdb
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Entity\obj\Debug\Entity.dll
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Entity\obj\Debug\Entity.pdb

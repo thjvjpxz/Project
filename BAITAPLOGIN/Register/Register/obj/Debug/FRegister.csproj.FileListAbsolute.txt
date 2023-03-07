@@ -1,0 +1,13 @@
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\obj\Debug\FRegister.csprojResolveAssemblyReference.cache
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\obj\Debug\Register.FormRegister.resources
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\obj\Debug\Register.Properties.Resources.resources
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\obj\Debug\FRegister.csproj.GenerateResource.Cache
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\obj\Debug\Register.exe
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\obj\Debug\Register.pdb
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\bin\Debug\Register.exe.config
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\bin\Debug\Register.exe
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\bin\Debug\Register.pdb
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\bin\Debug\Controller.dll
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\bin\Debug\Entity.dll
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\bin\Debug\Controller.pdb
+E:\C#_TLU\SQL_C#\BAITAPLOGIN\Register\Register\bin\Debug\Entity.pdb
