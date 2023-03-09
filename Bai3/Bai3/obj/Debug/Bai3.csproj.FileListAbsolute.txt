@@ -1,0 +1,8 @@
+E:\C#_TLU\TH4\Bai3\Bai3\bin\Debug\Bai3.exe.config
+E:\C#_TLU\TH4\Bai3\Bai3\bin\Debug\Bai3.exe
+E:\C#_TLU\TH4\Bai3\Bai3\bin\Debug\Bai3.pdb
+E:\C#_TLU\TH4\Bai3\Bai3\obj\Debug\Bai3.Form1.resources
+E:\C#_TLU\TH4\Bai3\Bai3\obj\Debug\Bai3.Properties.Resources.resources
+E:\C#_TLU\TH4\Bai3\Bai3\obj\Debug\Bai3.csproj.GenerateResource.Cache
+E:\C#_TLU\TH4\Bai3\Bai3\obj\Debug\Bai3.exe
+E:\C#_TLU\TH4\Bai3\Bai3\obj\Debug\Bai3.pdb
