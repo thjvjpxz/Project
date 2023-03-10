@@ -12,132 +12,135 @@ namespace Bai7
 {
     public partial class Form1 : Form
     {
-        private string phepTinh;
-        private long so1;
-        private double so2;
+        double result = 0;
+        string operation = "";
+        bool enter_value = false;
+        bool dauBang = false;
+        int clickCount = 0;
+        bool bang = false;
+        int clickBang = 0;
+        bool tinh = false;
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void button16_Click(object sender, EventArgs e)
+        private void button14_Click_1(object sender, EventArgs e)
         {
-            tbTinh.Clear();
-            tbKetQua.Clear();
+            clickBang++;
+            if (!dauBang)
+            {
+                result = double.Parse(lblResult.Text);
+                lblTinh.Text = result + " = ";
+            }
+            else
+            {
+                if (clickBang == 1 || tinh)
+                {
+                    bang = true;
+                    tinh = false;
+                    lblTinh.Text += lblResult.Text + " = ";
+                    switch (operation)
+                    {
+                        case "+":
+                            result += double.Parse(lblResult.Text);
+                            lblResult.Text = result + "";
+                            break;
+                        case "-":
+                            result -= double.Parse(lblResult.Text);
+                            lblResult.Text = result + "";
+                            break;
+                        case "*":
+                            result *= double.Parse(lblResult.Text);
+                            lblResult.Text = result + "";
+                            break;
+                        case "/":
+                            if (lblResult.Text == "0")
+                                lblResult.Text = "Không chia được";
+                            else
+                            {
+                                result /= double.Parse(lblResult.Text);
+                                lblResult.Text = result + "";
+                            }
+                            break;
+                    }
+                }
+                else
+                {
+                    result = double.Parse(lblResult.Text);
+                    lblTinh.Text = result + " = ";
+                    clickBang = 0;
+                }
+            }
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void button16_Click(object sender, EventArgs e)
         {
-            tbTinh.Text += "0";
+            lblResult.Text = "0";
+            lblTinh.Text = "";
+            result = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tbTinh.Text += "1";
-        }
+            if (lblResult.Text == "0" || enter_value)
+                lblResult.Text = "";
+            enter_value = false;
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            tbTinh.Text += "2";
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            tbTinh.Text += "3";
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            tbTinh.Text += "4";
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            tbTinh.Text += "5";
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            tbTinh.Text += "6";
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            tbTinh.Text += "7";
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            tbTinh.Text += "8";
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            tbTinh.Text += "9";
+            string txtButton = ((Button)sender).Text;
+            lblResult.Text += txtButton;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            phepTinh = "+";
-            so1 = long.Parse(tbTinh.Text);
-            tbTinh.Clear();
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            switch (phepTinh)
+            clickCount++;
+            operation = ((Button)sender).Text;
+            dauBang = true;
+            enter_value = true;
+            tinh = true;
+            if (clickCount == 1 || bang)
             {
-                case "+": so2 = so1 + long.Parse(tbTinh.Text);
-                    tbTinh.Text = so1 + "+" + tbTinh.Text + "="; 
-                    tbKetQua.Text = so2 + "";
-                    break;
-                case "-": so2 = so1 - long.Parse(tbTinh.Text);
-                    tbTinh.Text = so1 + "-" + tbTinh.Text + "="; 
-                    tbKetQua.Text = so2 + "";
-                    break;
-                case "*": so2 = so1 * long.Parse(tbTinh.Text);
-                    tbTinh.Text = so1 + "*" + tbTinh.Text + "=";
-                    tbKetQua.Text = so2 + "";
-                    break;
-                case "/":
-                    if (tbTinh.Text == "0")
-                        tbKetQua.Text = "Không chia được";
-                    else
-                    {
-                        so2 = (double) so1 / long.Parse(tbTinh.Text);
-                        tbTinh.Text = so1 + "/" + tbTinh.Text + "=";
-                        tbKetQua.Text = so2 + "";
-                    }
-                    break;
-            }
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            if (tbTinh.Text == "")
-            {
-                tbTinh.Text = "-";
+                if (double.TryParse(lblResult.Text, out result))
+                {
+                    lblTinh.Text = result + " " + operation + " ";
+                }
+                else
+                {
+                    result = 0;
+                    lblTinh.Text = result + " " + operation + " ";
+                }
+                bang = false;
             }
             else
             {
-                phepTinh = "-";
-                so1 = long.Parse(tbTinh.Text);
-                tbTinh.Clear();
+                switch (operation)
+                {
+                    case "+":
+                        result += double.Parse(lblResult.Text);
+                        lblResult.Text = result + "";
+                        break;
+                    case "-":
+                        result -= double.Parse(lblResult.Text);
+                        lblResult.Text = result + "";
+                        break;
+                    case "*":
+                        result *= double.Parse(lblResult.Text);
+                        lblResult.Text = result + "";
+                        break;
+                    case "/":
+                        if (lblResult.Text == "0")
+                            lblResult.Text = "Không chia được";
+                        else
+                        {
+                            result /= double.Parse(lblResult.Text);
+                            lblResult.Text = result + "";
+                        }
+                        break;
+                }
+                lblTinh.Text = lblResult.Text + " " + operation + " ";
+                
             }
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            phepTinh = "*";
-            so1 = long.Parse(tbTinh.Text);
-            tbTinh.Clear();
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-            phepTinh = "/";
-            so1 = long.Parse(tbTinh.Text);
-            tbTinh.Clear();
         }
 
     }
