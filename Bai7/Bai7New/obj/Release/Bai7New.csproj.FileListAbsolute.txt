@@ -1,0 +1,8 @@
+E:\C#_TLU\TH4\Bai7New\Bai7New\bin\Release\Bai7New.exe.config
+E:\C#_TLU\TH4\Bai7New\Bai7New\bin\Release\Bai7New.exe
+E:\C#_TLU\TH4\Bai7New\Bai7New\bin\Release\Bai7New.pdb
+E:\C#_TLU\TH4\Bai7New\Bai7New\obj\Release\Bai7New.Form1.resources
+E:\C#_TLU\TH4\Bai7New\Bai7New\obj\Release\Bai7New.Properties.Resources.resources
+E:\C#_TLU\TH4\Bai7New\Bai7New\obj\Release\Bai7New.csproj.GenerateResource.Cache
+E:\C#_TLU\TH4\Bai7New\Bai7New\obj\Release\Bai7New.exe
+E:\C#_TLU\TH4\Bai7New\Bai7New\obj\Release\Bai7New.pdb
