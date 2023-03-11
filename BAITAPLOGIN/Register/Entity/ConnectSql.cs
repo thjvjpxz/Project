@@ -30,31 +30,30 @@ namespace Entity
                 conn.Close();
         }
 
-        private bool checkTaiKhoan(string taiKhoan)
+        private bool checkTaiKhoan(string taiKhoan, out SqlDataReader reader)
         {
-            string query = "SELECT TaiKhoan FROM DangKy WHERE TaiKhoan = @user";
+            string query = "SELECT TaiKhoan, MatKhau FROM DangKy WHERE TaiKhoan = @user";
 
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@user", taiKhoan);
 
-            SqlDataReader reader = cmd.ExecuteReader();
+            reader = cmd.ExecuteReader();
             bool check = false;
             if (reader.HasRows)
                 check = true;
-            reader.Close();
             return check;
         }
 
         public bool AddAccount(Account acc)
         {
             OpenConnect();
-
-            if (checkTaiKhoan(acc.TaiKhoan))
+            SqlDataReader reader = null;
+            if (checkTaiKhoan(acc.TaiKhoan, out reader))
             {
                 CloseConnect();
                 return false;
             }
-
+            reader.Close();
             string query = "INSERT INTO DangKy VALUES (@user, @pass, @sdt)";
 
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -64,6 +63,21 @@ namespace Entity
 
             bool check = cmd.ExecuteNonQuery() == 1;
 
+            CloseConnect();
+            return check;
+        }
+
+        public bool findUser(Account acc)
+        {
+            OpenConnect();
+            bool check = false;
+            SqlDataReader reader = null;
+            if (checkTaiKhoan(acc.TaiKhoan, out reader))
+            {
+                if (reader.Read() && reader.GetString(1) == acc.MatKhau)
+                    check = true;
+            }
+            reader.Close();
             CloseConnect();
             return check;
         }

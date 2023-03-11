@@ -1,0 +1,14 @@
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\bin\Debug\Register.exe.config
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\bin\Debug\Register.exe
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\bin\Debug\Register.pdb
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\bin\Debug\Controller.dll
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\bin\Debug\Entity.dll
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\bin\Debug\Controller.pdb
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\bin\Debug\Entity.pdb
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\obj\Debug\Form.csprojResolveAssemblyReference.cache
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\obj\Debug\Register.FormLogin.resources
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\obj\Debug\Register.FormRegister.resources
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\obj\Debug\Register.Properties.Resources.resources
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\obj\Debug\Form.csproj.GenerateResource.Cache
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\obj\Debug\Register.exe
+E:\C#_TLU\TH4\Project\BAITAPLOGIN\Register\Register\obj\Debug\Register.pdb

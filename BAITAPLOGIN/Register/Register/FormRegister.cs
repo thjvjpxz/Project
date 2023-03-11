@@ -43,5 +43,10 @@ namespace Register
             else
                 MessageBox.Show("Tài khoản đã tồn tại", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

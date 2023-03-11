@@ -18,5 +18,11 @@ namespace Entity
             MatKhau = matKhau;
             SoDienThoai = soDienThoai;
         }
+
+        public Account(string taiKhoan, string matKhau)
+        {
+            TaiKhoan = taiKhoan;
+            MatKhau = matKhau;
+        }
     }
 }
