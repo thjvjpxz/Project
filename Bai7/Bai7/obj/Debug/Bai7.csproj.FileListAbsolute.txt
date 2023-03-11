@@ -1,9 +1,0 @@
-E:\C#_TLU\TH4\Bai7\Bai7\bin\Debug\Bai7.exe.config
-E:\C#_TLU\TH4\Bai7\Bai7\bin\Debug\Bai7.exe
-E:\C#_TLU\TH4\Bai7\Bai7\bin\Debug\Bai7.pdb
-E:\C#_TLU\TH4\Bai7\Bai7\obj\Debug\Bai7.Form1.resources
-E:\C#_TLU\TH4\Bai7\Bai7\obj\Debug\Bai7.Properties.Resources.resources
-E:\C#_TLU\TH4\Bai7\Bai7\obj\Debug\Bai7.csproj.GenerateResource.Cache
-E:\C#_TLU\TH4\Bai7\Bai7\obj\Debug\Bai7.exe
-E:\C#_TLU\TH4\Bai7\Bai7\obj\Debug\Bai7.pdb
-E:\C#_TLU\TH4\Bai7\Bai7\obj\Debug\Bai7.csprojResolveAssemblyReference.cache
